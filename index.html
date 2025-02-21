@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chrono Séries</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <h2 id="status">Prêt</h2>
+        <div id="chrono-container">
+            
+            <p id="chrono">00:00:000</p>
+        </div>
+        
+        <div id="settings-container" style="display: none;">
+            <label>Série (sec) : <input type="number" id="serieTime" value="30" class="setting-input"></label>
+            <label>Pause (sec) : <input type="number" id="pauseTime" value="10" class="setting-input"></label>
+            <label>Répétitions : <input type="number" id="repeats" value="5" class="setting-input"></label>
+        </div>
+    
+    <div class="control">
+        <button id="start" class="icon-button"><img src="resource/icon/play.png" class="icon"></button>
+        <button id="stop" class="icon-button"><img src="resource/icon/pause.png" class="icon"></button>
+        <button id="reset" class="icon-button"><img src="resource/icon/stop.png" class="icon"></button>
+    </div>
+
+        <button id="settings" class="icon-button"><img src="resource/icon/settings.png" class="icon"></button>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

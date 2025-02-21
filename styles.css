@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-image: url('resource/image/bg-spike.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    place-items: center; /* Centre les éléments à la fois horizontalement et verticalement */
+    min-height: 100vh;
+    margin: 0;
+    
+}
+
+.container {
+    margin-top: 50px;
+}
+
+#chrono {
+    font-size: 3rem;
+    margin: 20px;
+}
+
+.controls button {
+    font-size: 1.2rem;
+    margin: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+#chrono-container p{
+    font-family: Digital;
+}
+.settings {
+    margin-top: 20px;
+}
+
+.settings input {
+    width: 60px;
+    text-align: center;
+}
+.setting-input{
+    height: 25px;
+    border-radius: 5px;
+    background: none;
+    color: white;
+    border: none;
+}
+
+.setting-input:focus{
+    border: none;
+}
+#status {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+#settings-container {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+label {
+    display: block;
+    margin: 5px 0;
+}
+#app{
+    width: 250px;
+    backdrop-filter: blur(18px) saturate(180%);
+    -webkit-backdrop-filter: blur(18px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    padding-bottom: 50px;
+    padding-top:40px;
+}
+#settings{
+    top:20px;
+    left:20px;
+    position: absolute;
+    background: none;
+    border: none;
+}
+.icon{
+    width: 20px;
+    height: auto;
+}
+.icon-button{
+    background: none;
+    border:none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px; /* Ajuste selon la taille souhaitée */
+    height: 25px;
+    border: none;
+    background: none;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    
+}
+.control{
+    display: flex;
+    justify-content: center; /* Centre les éléments horizontalement */
+    align-items: center; /* Centre les éléments verticalement (si nécessaire) */
+}
+.icon-button:hover{
+    background-color: aqua;
+}
+@font-face {
+    font-family: Digital;
+    src: url(resource/font/digital-7\ \(mono\).ttf);
+  }
+  
