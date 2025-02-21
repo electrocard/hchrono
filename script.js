@@ -27,7 +27,7 @@ const repeatInput = document.getElementById("repeats");
 const sounds = {
     start: new Audio("resource/sound/start.mp3"),
     pause: new Audio("resource/sound/pause.mp3"),
-    newSerie: new Audio("new_serie.mp3"),
+    newSerie: new Audio("resource/sound/new_serie.mp3"),
     half: new Audio("resource/sound/half.mp3"),
 };
 
@@ -80,11 +80,16 @@ function startTimer(duration, mode, resume = false) {
         playSound("pause"); 
     } else {
         statusDisplay.textContent = `Série ${currentRepetition + 1}/${totalRepetitions}`;
-        playSound("newSerie"); 
+        
+        // 🚨 Empêcher le son "new_serie" à la première série
+        if (currentRepetition > 0) { 
+            playSound("newSerie");
+        }
     }
 
     timer = setInterval(updateChrono, 10);
 }
+
 
 function startSeries(resume = false) {
     if (currentRepetition < totalRepetitions) {

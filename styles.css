@@ -13,78 +13,79 @@ body {
     
 }
 
+
 .container {
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 #chrono {
-    font-size: 3rem;
-    margin: 20px;
+    font-size: 6rem;
+    margin: 40px;
 }
 
 .controls button {
     font-size: 1.2rem;
     margin: 5px;
-    padding: 10px 20px;
+    padding: 20px 40px;
     cursor: pointer;
 }
 #chrono-container p{
     font-family: Digital;
+    font-size: 5em;
 }
 .settings {
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
-.settings input {
-    width: 60px;
-    text-align: center;
-}
+
 .setting-input{
-    height: 25px;
+    height: 50px;
     border-radius: 5px;
     background: none;
     color: white;
     border: none;
+    font-size: 1em;
 }
 
 .setting-input:focus{
     border: none;
 }
 #status {
-    margin-top: 20px;
-    font-size: 1.5rem;
+    margin-top: 40px;
+    font-size: 3rem;
     font-weight: bold;
 }
 #settings-container {
-    margin-top: 10px;
-    padding: 10px;
+    margin-top: 20px;
+    padding: 20px;
     border-radius: 5px;
+    font-size: 2em;
 }
 
 
 label {
     display: block;
-    margin: 5px 0;
+    margin: 10px 0;
 }
 #app{
-    width: 250px;
+    width: 500px;
     backdrop-filter: blur(18px) saturate(180%);
     -webkit-backdrop-filter: blur(18px) saturate(180%);
     background-color: rgba(17, 25, 40, 0.75);
-    border-radius: 12px;
+    border-radius: 24px;
     border: 1px solid rgba(255, 255, 255, 0.125);
-    padding-bottom: 50px;
-    padding-top:40px;
+    padding-bottom: 100px;
+    padding-top:80px;
 }
 #settings{
-    top:20px;
-    left:20px;
+    top:40px;
+    left:40px;
     position: absolute;
     background: none;
     border: none;
 }
 .icon{
-    width: 20px;
+    width: 40px;
     height: auto;
 }
 .icon-button{
@@ -93,13 +94,13 @@ label {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 25px; /* Ajuste selon la taille souhaitée */
-    height: 25px;
+    width: 50px; /* Ajuste selon la taille souhaitée */
+    height: 50px;
     border: none;
     background: none;
-    padding: 5px;
+    padding: 10px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 10px;
     
 }
 .control{
